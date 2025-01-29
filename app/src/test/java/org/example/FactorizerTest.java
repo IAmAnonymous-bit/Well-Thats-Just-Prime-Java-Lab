@@ -32,26 +32,65 @@ class FactorizerTest {
 
   }
 
-  ArrayList<Integer> f = factorizer.primeFactors(9);
+  ArrayList<Integer> t = factorizer.primeFactors(10);
 
   @Test
-  void checkNineIndexZero()
+  void checkTenIndexZero()
   {
-    assertEquals(cNIZ, f.get(0));
+    assertEquals(2, t.get(0));
 
   }
 
   @Test
-  void checkNineIndexOne()
+  void checkTenIndexOne()
   {
-    assertEquals(3, f.get(1));
+    assertEquals(5, t.get(1));
     
   }
 
   @Test
-  void checkNineSize()
+  void checkTenSize()
   {
-    assertEquals(2, f.size());
+    assertEquals(2, t.size());
     
   }
+
+  ArrayList<Integer> oH = factorizer.primeFactors(100);
+
+  @Test
+  void check100Index0()
+  {
+    assertEquals(2, oH.get(0));
+    
+  }
+
+  @Test
+  void check100Index1()
+  {
+    assertEquals(2, oH.get(1));
+    
+  }
+
+  @Test
+  void check100Index2()
+  {
+    assertEquals(5, oH.get(2));
+    
+  }
+
+  @Test
+  void check100Index3()
+  {
+    assertEquals(5, oH.get(3));
+    
+  }
+
+  @Test
+  void check100Size()
+  {
+    assertEquals(4, oH.size());
+    
+  }
+
+
 }

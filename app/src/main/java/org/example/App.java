@@ -6,15 +6,25 @@ public class App {
     // Test your Factorizer class using a driver program here!
     Factorizer f = new Factorizer();
 
-    ArrayList<Integer> last = f.primeFactors(9);
-    for (int i = 0; i < last.size(); i++)
+    ArrayList<Integer> check10 = f.primeFactors(10);
+    for (int i = 0; i < check10.size(); i++)
     {
-      System.out.print(last.get(i));
+      System.out.print(check10.get(i));
       System.out.print(", ");
     }
 
     System.out.println("Done");
-    System.out.println(last.size());
+    System.out.println(check10.size());
+
+    ArrayList<Integer> check100 = f.primeFactors(100);
+    for (int i = 0; i < check100.size(); i++)
+    {
+      System.out.print(check100.get(i));
+      System.out.print(", ");
+    }
+
+    System.out.println("Done");
+    System.out.println(check100.size());
     
   }
 }
