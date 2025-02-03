@@ -20,7 +20,7 @@ class FactorizerTest {
   void itReturnsAnEmptyListForZero() 
   {
     ArrayList<Integer> first = factorizer.primeFactors(0);
-    assertEquals(0, first.size());
+    assertEquals(first.size(), 0);
 
   }
 
@@ -28,7 +28,7 @@ class FactorizerTest {
   void itReturnsAnEmptyListForOne()
   {
     ArrayList<Integer> second = factorizer.primeFactors(1);
-    assertEquals(0, second.size());
+    assertEquals(second.size(), 0);
 
   }
 
@@ -37,21 +37,21 @@ class FactorizerTest {
   @Test
   void checkTenIndexZero()
   {
-    assertEquals(2, t.get(0));
+    assertEquals(t.get(0), 2);
 
   }
 
   @Test
   void checkTenIndexOne()
   {
-    assertEquals(5, t.get(1));
+    assertEquals(t.get(1), 5);
     
   }
 
   @Test
   void checkTenSize()
   {
-    assertEquals(2, t.size());
+    assertEquals(t.size(), 2);
     
   }
 
@@ -60,35 +60,35 @@ class FactorizerTest {
   @Test
   void check100Index0()
   {
-    assertEquals(2, oH.get(0));
+    assertEquals(oH.get(0), 2);
     
   }
 
   @Test
   void check100Index1()
   {
-    assertEquals(2, oH.get(1));
+    assertEquals(oH.get(1), 2);
     
   }
 
   @Test
   void check100Index2()
   {
-    assertEquals(5, oH.get(2));
+    assertEquals(oH.get(2), 5);
     
   }
 
   @Test
   void check100Index3()
   {
-    assertEquals(5, oH.get(3));
+    assertEquals(oH.get(3), 5);
     
   }
 
   @Test
   void check100Size()
   {
-    assertEquals(4, oH.size());
+    assertEquals(oH.size(), 4);
     
   }
 
